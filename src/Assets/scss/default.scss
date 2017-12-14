@@ -1,0 +1,90 @@
+@import "_config.scss";
+
+header {
+	position: relative;
+	display: block;
+	width: 100%;
+	background: #fafafa;
+	color: $black;
+	height: 60px;
+	font-family: $raleway;
+
+	.logo {
+		position: absolute;
+		top: 80%; left: 30px;
+		font-size: 30px;
+		@include translateY(-50%);
+	}
+
+	nav, nav ul, nav ul li {
+		margin: 0;
+		padding: 0;
+	}
+
+	nav {
+		position: absolute;
+		top: 75%; right: 170px;
+		@include translateY(-50%);
+
+		ul li {
+			list-style-type: none;
+			display: inline-block;
+			margin-right: 10%;
+			padding-right: 10%;
+
+			&.last {
+				margin: 0;
+			}
+
+			a {
+				font-size: 20px;
+				line-height: 20px;
+				color: $newGray;
+			}
+		}
+	}
+
+}
+
+homePage {
+	h1 {
+		/*
+		adjust with different screens
+		*/
+		text-align: left;
+		padding-top: 5%;
+		padding-left: 700px;
+		position: relative;
+		bottom: 75px;
+		font-size: 70px;
+		font-family: $raleway;
+		font-weight: $bold;
+		color: $newGray;
+
+
+	}
+	h2 {
+		text-align: left;
+		padding-top: 5%;
+		padding-left: 700px;
+		position: relative;
+		bottom: 75px;
+	}
+	p {
+		text-align: left;
+		padding-left: 700px;
+		position: relative;
+		padding-right: 120px;
+		line-height: 30px;
+	}
+	.contact-images {
+		padding-left: 700px;
+		padding-top: 5%;
+		position: relative;
+
+	  ul li {
+			display: inline-block;
+			margin-right: 10px;
+		}
+	}
+}
